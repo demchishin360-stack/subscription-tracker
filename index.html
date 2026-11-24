@@ -52,8 +52,10 @@ body{background-color:#060b0a;background-image:radial-gradient(ellipse at 50% -1
 .tilkaio.speaking .tilkaio-bubble{opacity:1;visibility:visible;transform:translateY(0) scale(1)}
 .tilkaio.purring .tilkaio-cat{animation:tilkaio-purr .13s ease-in-out infinite alternate}
 .tilkaio-mouth-open{opacity:0;transform:scaleY(.15);transform-box:fill-box;transform-origin:center;transition:opacity .12s,transform .12s}
+.tilkaio-mouth-inner{opacity:0;transition:opacity .12s}
 .tilkaio.purring .tilkaio-mouth-closed{opacity:0}
 .tilkaio.purring .tilkaio-mouth-open{opacity:1;transform:scaleY(1)}
+.tilkaio.purring .tilkaio-mouth-inner{opacity:1}
 @keyframes tilkaio-purr{from{transform:translateX(-.7px) rotate(-1.5deg)}to{transform:translateX(.7px) rotate(1.5deg)}}
 @keyframes tilkaio-float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-3px) rotate(2deg)}}
 @media(max-width:560px){.tilkaio{right:12px;bottom:12px;padding:6px 9px 6px 6px;gap:6px}.tilkaio-cat{width:36px;height:36px}.tilkaio-caption{font-size:8px}}
@@ -84,7 +86,8 @@ body{background-color:#060b0a;background-image:radial-gradient(ellipse at 50% -1
 <path d="M18 36c2-3 6-4 9-2m10 0c3-2 7-1 9 2" fill="none" stroke="#a5ffe1" stroke-width="2.4" stroke-linecap="round"/>
 <ellipse cx="24" cy="38" rx="2" ry="3" fill="#53e9c2"/><ellipse cx="41" cy="38" rx="2" ry="3" fill="#53e9c2"/>
 <path class="tilkaio-mouth-closed" d="m30 44 3 2 3-2m-3 2v3m-2 0h4" fill="none" stroke="#8eeed2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<ellipse class="tilkaio-mouth-open" cx="33" cy="49" rx="2.5" ry="3" fill="#53e9c2"/>
+<ellipse class="tilkaio-mouth-open" cx="33" cy="50" rx="3.6" ry="5" fill="#53e9c2" stroke="#a5ffe1" stroke-width=".7"/>
+<ellipse class="tilkaio-mouth-inner" cx="33" cy="50" rx="1.6" ry="2.8" fill="#09231b"/>
 <path d="m12 45-8-2m9 6-9 1m38-5 8-2m-9 6 9 1" fill="none" stroke="#8eeed2" stroke-width="1.6" stroke-linecap="round"/>
 <circle cx="33" cy="45" r="1.2" fill="#f5a8ba"/>
 </svg><span class="tilkaio-copy"><span class="tilkaio-name">Тилкайо 🐾</span><span class="tilkaio-caption">отсылка на Нарезанного</span></span>
