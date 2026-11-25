@@ -83,6 +83,26 @@ body:after{content:"";position:fixed;z-index:-1;top:0;left:50%;width:min(820px,1
 .overlay{background:rgba(5,2,3,.84)}.modal{background:linear-gradient(145deg,#191011,#0d090a);border:1px solid #542326;box-shadow:0 24px 80px rgba(0,0,0,.75),0 0 32px rgba(194,29,38,.14)}.modal-head p,.field label{color:#ae9898}.close{background:#281517;color:#e0c1c1}.close:hover{background:#431b1f;color:#ffb6b6}.field input,.field select{background:#100b0c;border-color:#492528;color:#f4eeee}.field input:focus,.field select:focus{border-color:#e94a50;box-shadow:0 0 0 3px rgba(233,74,80,.14),0 0 18px rgba(233,74,80,.09)}.field select option{background:#100b0c;color:#f4eeee}.secondary{background:#160f10;border-color:#4c292b;color:#d2b7b7}.secondary:hover{background:#291518;color:#fff0ef}
 .footnote{color:#968181}.footnote strong{color:#d7b6b6}.footer-right svg{color:#ef5056}.batch-bar{background:#160f10;border-color:#54272b;box-shadow:0 10px 36px rgba(0,0,0,.65),0 0 22px rgba(200,34,42,.14)}.batch-count{color:#d4b9b9}.toast{background:#ffe1df;color:#2b080a;box-shadow:0 0 22px rgba(239,48,56,.3)}.stat-art,.stat-art:after{border-color:rgba(239,48,56,.19)}
 .dashboard-analytics{background:radial-gradient(ellipse at 12% 0%,rgba(226,45,52,.11),transparent 40%),linear-gradient(145deg,#171011,#0d0a0b);border-color:#442225;box-shadow:0 12px 40px rgba(0,0,0,.4),0 0 22px rgba(187,30,38,.08)}.dash-head{border-color:#3a2022}.dash-eyebrow{color:#f06468}.dash-head h2{color:#f5eaea}.dash-total strong{color:#ffe9e7}.dash-total span,.dash-total small{color:#ad9293}.dash-content{color:#e7dada}.dash-upcoming,.dash-breakdown{border-color:#372022}.dash-up-row,.dash-break-row{border-color:#29191b}.dash-bar{background:#3b171b}.dash-bar-fill{background:linear-gradient(90deg,#a71b24,#fa555b);box-shadow:0 0 12px rgba(235,54,62,.27)}.dash-empty{color:#a78d8e}
+/* Analytics accents aligned with the warm red theme */
+.dashboard-analytics .dash-progress{background:#321719}
+.dashboard-analytics .dash-progress i{background:linear-gradient(90deg,#b9232d,#ff7778);box-shadow:0 0 10px rgba(235,54,62,.38)}
+.dashboard-analytics .dash-date{color:#f07478}
+.dashboard-analytics .dash-cost,.dashboard-analytics .dash-up-price{color:#ffd7d5}
+.dashboard-analytics .dash-share{color:#ad8587}
+.dashboard-analytics .dash-panel h3{color:#d9bfc0}
+.dashboard-analytics .dash-service-copy strong,.dashboard-analytics .dash-up-copy strong{color:#f4e6e5}
+.dashboard-analytics .dash-service-copy small,.dashboard-analytics .dash-up-copy small{color:#a78d8e}
+.dashboard-analytics .dash-bot{color:#f28b8e!important}
+.analytics-metric{background:#1a1011;border-color:#462428}.analytics-metric span{color:#ad9293}.analytics-metric strong{color:#ffd7d5}.chart-title{color:#ead6d6}
+.analytics-chart{border-color:#462428}.chart-amount,.chart-label{color:#ad9293}.chart-bar{background:linear-gradient(180deg,#ff7778,#b9232d);box-shadow:0 0 13px rgba(235,54,62,.28)}.chart-bar.zero{background:#3b2022}
+.analytics-note{background:#160e0f;border-color:#462428;color:#c5aaaa}.analytics-note strong{color:#ffd7d5}
+.icon-btn[data-analytics]{color:#ef777b}.icon-btn[data-analytics]:hover{background:#351619;color:#ffc0c0}
+/* Keep form controls inside the modal at every viewport width. */
+.modal{min-width:0}
+.form-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.field{min-width:0}
+.field input,.field select{display:block;width:100%;max-width:100%;min-width:0}
+@media(max-width:420px){.modal:not(.analytics-modal){padding:20px}.form-grid{grid-template-columns:minmax(0,1fr)}}
 .analytics-metric{background:#1a1011;border-color:#462428}.analytics-metric span{color:#ad9293}.analytics-metric strong{color:#ffd7d5}.chart-title{color:#ead6d6}
 .tilkaio{border-color:#663034;background:rgba(19,11,12,.96);box-shadow:0 0 26px rgba(221,45,52,.16),0 8px 28px rgba(0,0,0,.56);color:#ffe1df}.tilkaio:hover{box-shadow:0 0 32px rgba(239,48,56,.28),0 10px 30px rgba(0,0,0,.55)}.tilkaio-cat{filter:hue-rotate(105deg) saturate(.8) brightness(1.2) drop-shadow(0 0 8px rgba(240,68,76,.3))}.tilkaio-caption{color:#c29294}.tilkaio-bubble{border-color:#79373b;background:#1c1012;color:#ffe3e1;box-shadow:0 0 25px rgba(208,42,49,.2),0 10px 30px rgba(0,0,0,.5)}.tilkaio-bubble:after{background:#1c1012;border-color:#79373b}
 @keyframes hawkins-flicker{0%,18%,22%,55%,100%{opacity:1}20%,57%{opacity:.88}19%,56%{opacity:.96}}.eyebrow{animation:hawkins-flicker 8s infinite}.primary:focus-visible,.trash-mode:focus-visible,.filter:focus-visible,.tilkaio:focus-visible{outline:2px solid #ff999b;outline-offset:3px}
